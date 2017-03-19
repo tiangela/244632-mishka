@@ -1,32 +1,32 @@
 .main {
   width: 100%;
 }
-
 .main__title-wrapper--index {
   background-color: @title-grey;
 }
 .main__title-wrapper--catalog, .main__title-wrapper--form  {
+  text-align: center;
+  margin-bottom: 28px;
   background-color: @bgr-color;
 }
 .main__wrapper {
   .container ();
-    /*padding: 0 30px;*/
 }
-/*.main__title-container {
-  width: 240px;
-}*/
   .main__title {
-    padding-top: 76px;
+    padding-top: 70px;
     padding-bottom: 80px;
-
+    padding-left: 5px;
     &--index {
-      padding-left: 38px;
-      padding-right: 38px;
-      padding-bottom: 123px;
-      padding-top: 80px;
+      padding-bottom: 16px;
       text-align: center;
-      background: url("../img/hero-mobile@1x.jpg") no-repeat;
     }
+  }
+  .main__title-container {
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 123px;
+    padding-top: 0;
+    background: url("../img/hero-mobile@1x.jpg") no-repeat center;
   }
     .main__comment {
       display: none;
@@ -71,6 +71,10 @@
     .main__container {
       .container ();
     }
+  .main__title-wrapper--catalog, .main__title-wrapper--form  {
+    margin-bottom: 80px;
+  }
+
   .main__link {
     display: inline-block;
     vertical-align: top;
@@ -84,16 +88,21 @@
       }
     }
   .main__title {
-    .container ();
+    padding-left: 0;
+    padding-top: 97px;
     display: inline-block;
     text-align: center;
     vertical-align: top;
       &--index {
-        padding-left: 84px;
-        padding-top: 151px;
-        padding-bottom: 374px;
+        padding-top: 17px;
+        padding-bottom: 11px;
         }
   }
+.main__title-container {
+  .container ();
+  padding-top: 135px;
+  padding-bottom: 362px;
+}
   .main__description {
     margin-top: 73px;
     margin-bottom: 66px;
@@ -121,10 +130,7 @@
     .main__title {
       padding-bottom: 94px;
     &--index {
-      padding-left: 43px;
-      padding-right: 44px;
-      padding-top: 166px;
-      padding-bottom: 350px;
+      padding: 0;
     }
   }
   .main__description {
@@ -132,5 +138,11 @@
     }
   .main__item {
     width: 175px;
+}
+.main__title-container {
+  padding-left: 203px;
+  padding-right: 200px;
+  padding-top: 154px;
+  padding-bottom: 358px;
 }
   }
