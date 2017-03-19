@@ -39,14 +39,10 @@
 
 @media @tablet-widths {
   .catalog__item {
+    display: flex;
     margin-bottom: 54px;
     min-height: 334px;
   }
-  .catalog__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
   .catalog__title {
     font-size: 20px;
     line-height: 24px;
@@ -73,15 +69,32 @@
 }
 
 @media @desktop-widths {
- .catalog__item {
+  .catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__title {
+  padding-left: 0;
+  padding-right: 0;
+}
+  .catalog__item {
    display: block;
    width: 315px;
+   min-height: 660px;
  }
- .catalog__image {
+  .catalog__image {
    width: 100%;
  }
- .catalog__container {
+  .catalog__container {
    width: 250px;
    margin-left: 28px;
+ }
+ .catalog__price {
+   min-height: 73px;
+ }
+ .catalog__feature {
+   padding-left: 0;
+   margin-bottom: 30px;
  }
 }
